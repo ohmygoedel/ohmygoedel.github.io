@@ -1,2 +1,2 @@
 # ohmygoedel.github.io
-My personal website.
+My personal website, written in HTML. In this website you will find the basic information regarding my professional journey (publications, talks, projects, and activities). I created this website using "https://www.w3schools.com/html/html_layout.asp" as a reference. I used the font Lexend (https://www.lexend.com) in order to improve the website's accessibility. Feel free to contact me if you have any suggestions about further improving its accessibility.
