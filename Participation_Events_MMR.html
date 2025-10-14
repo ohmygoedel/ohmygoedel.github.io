@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marcos Mercandeli-Rodrigues - Activities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/css?family=Lexend" crossorigin>
+<link rel=preload" as=style" href="https://fonts.googleapis.com/css?family=Lexend">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+<link rel="icon" type="image/x-icon" href="Images/Lambda.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Lexend';
+  margin: 0;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #7b8db3;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: AliceBlue;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: AliceBlue;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example #aaa*/
+.fakeimg {
+  background-color: #cdccda;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: AliceBlue;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+img {
+  display: block; /* Ensure block-level behavior */
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<img src="Images/lattauri_el_experiment_4.png" style="float: left; width: 45px; height: 45px" alt="A sun with a cursive M in the middle using Elder Scrolls symbology as an inspiration.">
+  <a href="Home_MMR.html">Home</a>
+  <a href="Publications_MMR.html">Publications</a>
+  <a href="Talks_MMR.html">Talks</a>
+  <a href="Projects_MMR.html">Projects</a>
+  <a href="Activities_MMR.html">Activities</a>
+  <a href="https://github.com/ohmygoedel" target="_blank" class="right">Github</a>
+</div>
+
+<div class="row">
+  <div class="side" style="height: auto;">
+    <div class="navbar">
+        <a href="">Participation in Events, Congresses, etc.</a>
+    </div>
+  </div>
+  <div class="main">
+    <h2>Participation in Events, Congresses, etc.</h2>
+    <p style="text-align:justify">
+        The 18th Conference on Intelligent Computer Mathematics (CICM 2025). 2025.<br><br>
+        20th International Symposium on Logical and Semantic Frameworks, with Applications (LSFA 2025). 2025.<br><br>
+        17th NASA Formal Methods Symposium (NFM 2025). 2025.<br><br>
+        I Encontro Brasileiro em Teoria das Categorias. 2021.<br><br>
+        2th Mini Workshop on Singularities, Geometry and Differential Equations and 1st Meeting on Foliations and Singularities. 2019.<br><br>
+        Linear Algebra and its Applications Workshop (LAAW, ICM 2018 Satellite Event). 2018.<br><br>
+        II Mini-Workshop em Geometria Simplética. 2017.<br><br>
+        XLVIII Simpósio Brasileiro de Pesquisa Operacional (SBPO 2016). 2016.<br><br>
+        International School and Conference on Complex Networks (NetSci-X 2015). 2015.
+    </p>
+  <p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </p>
+  </div>
+</div>
+
+<div class="footer">
+    <h6>All rights reserved: Marcos Mercandeli-Rodrigues. Powered by <a href="https://github.com/" target="_blank">Github</a>.
+    <p id="CurrentDate"></p>
+
+    <script>
+    const d = new Date();
+    document.getElementById("CurrentDate").innerHTML = d;
+    </script>
+    </h6>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marcos Mercandeli-Rodrigues - Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/css?family=Lexend" crossorigin>
+<link rel=preload" as=style" href="https://fonts.googleapis.com/css?family=Lexend">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+<link rel="icon" type="image/x-icon" href="Images/Lambda.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Lexend';
+  margin: 0;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #7b8db3;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: AliceBlue;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: AliceBlue;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example #aaa*/
+.fakeimg {
+  background-color: #cdccda;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: AliceBlue;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+img {
+  display: block; /* Ensure block-level behavior */
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<img src="Images/lattauri_el_experiment_4.png" style="float: left; width: 45px; height: 45px" alt="A sun with a cursive M in the middle using Elder Scrolls symbology as an inspiration.">
+  <a href="Home_MMR.html">Home</a>
+  <a href="Publications_MMR.html">Publications</a>
+  <a href="Talks_MMR.html">Talks</a>
+  <a href="Projects_MMR.html">Projects</a>
+  <a href="Activities_MMR.html">Activities</a>
+  <a href="https://github.com/ohmygoedel" target="_blank" class="right">Github</a>
+</div>
+
+<div class="row">
+  <div class="side" style="height: auto;">
+    <div class="navbar">
+        <a href="">Formalizing Anti-Unification Algorithms in PVS</a>
+    </div>
+  </div>
+  <div class="main">
+    <h2>Formalizing Anti-Unification Algorithms in PVS</h2>
+    <h3>Start Year: 2025</h3>
+    <p style="text-align:justify">
+        An anti-unification problem for a family of objects of a certain type in a certain context consists in finding commonalities between those objects in order to construct generalizers that uniformly abstract over their differences subject to a preference relation for comparing them according to what constitutes a good generalization relative to the context. Anti-unification is a vital component in mathematical formalisms regarding different deductive frameworks such as proof assistants, systems for numerical, symbolic and algebraic computations, automatic deduction, and automation (Cerna and Kutsia [2023]), to cite a few.
+    </p>
+    <p style="text-align:justify">
+        Considering those applications and the development of the field of equational reasoning, it is pertinent to formalize, in interactive theorem provers, the mathematical properties ensuring the termination, soundness, and completeness of computational solutions for anti-unification problems modulo various algebraic theories.
+        The only formalization of an anti-unification algorithm known to date is due to Ayala-Rincon et al. [2025] for syntactic anti-unification.
+        The specification of the algorithm <a href="https://github.com/nasa/pvslib/blob/0835a23b168c9e03d29e470fdd7a05e735172dcc/TRS/antiunif.pvs#L454-L471" target="_blank">Antiunify</a> (Ayala-Rincón et al. [2025]), together with its termination and soundness, was formalized and verified in <a href="https://pvs.csl.sri.com/index.html" target="_blank">PVS</a> (Prototype Verification System, Owre et al. [1992]).
+    </p>
+    <p style="text-align:justify">
+        Although useful, algorithms for syntactic anti-unification alone cannot provide all the preferred solutions for the instances present in equational theories such as the commutative (C), associative (A) (Alpuente et al. [2014]), idempotent (I) (Cerna and Kutsia [2020a]), unital (U) (Cerna and Kutsia [2020b]), absorptive (Abs) (Ayala-Rincón [2024]) theories as well as their combinations.
+A very favourable aspect of the algorithm's construction and specification in PVS developed by Ayala-Rincón et al. [2025] is that the work done so far provides a very solid ground upon which algorithms for solving the anti-unification problems in first-order equational theories of extensive use can also be specified and formally mechanized.
+    </p>
+    <p style="text-align:justify">
+        The main goal of this project is the extension of the algorithm Antiunify to complete and sound algorithms for dealing with anti-unification modulo equational theories of extensive use, in particular anti-unificatiom modulo (Abs C)(Abs)(C). Those extensions and their mathematical properties will be also specified and verified in PVS.
+    </p>
+    <h3>References</h3>
+    <p style="text-align:justify">
+        M. Alpuente, S. Escobar, J. Espert, and J. Meseguer. A modular order-sorted equational generalization algorithm. Inf. Comput., 235:98–136, 2014. URL <a href="https://doi.org/10.1016/j.ic.2014.01.006" target="_blank">https://doi.org/10.1016/j.ic.2014.01.006</a>.
+    <br><br>
+        M. Ayala-Rincón, D. M. Cerna, A. F. G. Barragán, and T. Kutsia. Equational anti-unification over absorption theories. In C. Benzmüller, M. J. H. Heule, and R. A. Schmidt, editors, Automated Reasoning, pages 317–337, Cham, 2024. Springer Nature Switzerland. ISBN 978-3-031-63501-4. URL <a href="https://doi.org/10.1007/978-3-031-63501-4_17" target="_blank">https://doi.org/10.1007/978-3-031-63501-4_17</a>.
+    <br><br>
+        M. Ayala-Rincón, T. A. de Lima, M. J. D. Lima, M. M. Moscato, and T. Kutsia. Verification of an anti-unification algorithm in PVS. In A. Dutle, L. Humphrey, and L. Titolo, editors, NASA Formal Methods, pages 54–71, Cham, 2025. Springer Nature Switzerland. ISBN 978-3-031-93706-4. URL <a href="https://doi.org/10.1007/978-3-031-93706-4_4" target="_blank">https://doi.org/10.1007/978-3-031-93706-4_4</a>.
+    <br><br>
+        D. M. Cerna and T. Kutsia. Idempotent Anti-Unification. ACM Trans. Comput. Log., 21(2): 10:1–10:32, 2020a. URL <a href="https://doi.org/10.1145/3359060" target="_blank">https://doi.org/10.1145/3359060</a>.
+    <br><br>
+        D. M. Cerna and T. Kutsia. Unital Anti-Unification: Type and Algorithms. In 5th International Conference on Formal Structures for Computation and Deduction (FSCD 2020). Leibniz International Proceedings in Informatics (LIPIcs), Volume 167, pp. 26:1-26:20, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2020b). URL <a href="https://doi.org/10.4230/LIPIcs.FSCD.2020.26" target="_blank">https://doi.org/10.4230/LIPIcs.FSCD.2020.26</a>
+    <br><br>
+        D. M. Cerna and T. Kutsia. Anti-unification and generalization: A survey. In Proceedings of the 32nd Int. Joint Conference on Artificial Intelligence, IJCAI, pages 6563–6573. ijcai.org, 2023. URL <a href="https://doi.org/10.24963/ijcai.2023/736" target="_blank">https://doi.org/10.24963/ijcai.2023/736</a>.
+    <br><br>
+        S. Owre, J. M. Rushby, and N. Shankar. PVS: A prototype verification system. In D. Kapur, editor, 11th Int. Conference on Automated Deduction (CADE), volume 607 of Lecture Notes in Artificial Intelligence, pages 748–752, Saratoga, NY, June 1992. Springer. URL <a href="https://doi.org/10.1007/3-540-55602-8_217" target="_blank">https://doi.org/10.1007/3-540-55602-8_217</a>.
+    </p>
+  <p>
+  </p>
+  </div>
+</div>
+
+<div class="footer">
+    <h6>All rights reserved: Marcos Mercandeli-Rodrigues. Powered by <a href="https://github.com/" target="_blank">Github</a>.
+    <p id="CurrentDate"></p>
+
+    <script>
+    const d = new Date();
+    document.getElementById("CurrentDate").innerHTML = d;
+    </script>
+    </h6>
+</div>
+
+</body>
+</html>
+
